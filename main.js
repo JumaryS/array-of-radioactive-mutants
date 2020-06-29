@@ -32,12 +32,16 @@ function oddOrEven(arr){
 }
 }
 
-function changeNextThreeToValue(val1,val2,val3){
-  for (let i= 0; i <=val1.length; i ++){
-      val1[i] = val2 
-      val2[i]= val3
-     }
-}
+function changeNextThreeToValue(index,array,val3){
+  for (let i= 0; i <=array.length; i ++){
+    if (i >= index && i <= index.splice(3)){
+      return i = val3
+    }
+
+      // val1[i] = val2 
+      // val2[i]= val3
+    }
+} 
 
 
 /*********************************
