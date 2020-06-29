@@ -33,9 +33,10 @@ function oddOrEven(arr){
 }
 
 function changeNextThreeToValue(index,array,val3){
-  for (let i= 0; i <=array.length; i ++){
-    if (i >= index && i <= index.splice(3)){
-      return i = val3
+  for (let i= 0; i < array.length; i ++){
+    if (i >= index  && i < index + 3){
+     array[i] = val3
+      // return index[i] = val3   if you have  the i <= index + 3 then it will keep going up) when you take the equal sign then the num wont go up
     }
 
       // val1[i] = val2 
